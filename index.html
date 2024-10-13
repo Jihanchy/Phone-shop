@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone-shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend:{
+              colors: {
+                btn_primary: '#0D6EFD',
+                banner: '#0D6EFD',
+                                                     
+              },
+              fontFamily: {
+                 manrope: 'Manrope'
+  
+              },
+              backgroundImage: {
+                input: "url('./assets/bg.jpg')",
+  
+              },
+            },
+          },
+        }
+      </script>
 </head>
+
 <body>
-    
+    <header class=" bg-slate-50 h-[560px]">
+      <section class="w-10/12 mx-auto relative">
+        <nav class="flex justify-between items-center py-5">
+            <div class="text-xl font-bold">Hot Gadgets</div>
+            <div><button class="btn bg-btn_primary text-white font-semibold">Sign in</button></div>
+        </nav>
+        <div class="text-center w-3/5 mx-auto space-y-3 mt-5">
+            <h1 class="text-5xl font-bold">Apple iPhone 13 Pro Max</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="btn bg-btn_primary">Buy Now</button>
+        </div>
+        <div class="absolute left-56">
+            <img class="w-3/4" src="images/banner.png" alt="">
+        </div>
+      </section>
+    </header>
 </body>
+
 </html>
