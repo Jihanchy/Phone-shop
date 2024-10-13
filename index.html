@@ -40,13 +40,25 @@
         <div class="text-center w-3/5 mx-auto space-y-3 mt-5">
             <h1 class="text-5xl font-bold">Apple iPhone 13 Pro Max</h1>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
-            <button class="btn bg-btn_primary">Buy Now</button>
+            <button class="btn bg-btn_primary text-white">Buy Now</button>
         </div>
         <div class="absolute left-56">
             <img class="w-3/4" src="images/banner.png" alt="">
         </div>
       </section>
     </header>
+    <main class="w-10/12 mx-auto mt-52">
+        <h2 class="text-2xl font-bold text-center">Search your phone</h2>
+        <div class="bg-slate-100 w-2/4 mx-auto flex justify-between rounded-lg mt-3 mb-5">
+            <input id="search-text" class="bg-slate-100 rounded-lg w-full p-3" type="text" placeholder="search your phone">
+            <button onclick="handleSearch()" id="search-btn" class="btn bg-btn_primary text-white">Search</button>
+        </div>
+        <div class="text-center">
+            <button onclick="showAllBtn()" id="" class="text-white btn bg-btn_primary">Show All</button>
+        </div>
+        <div class="flex justify-center"><span id="loading" class="loading hidden loading-spinner loading-lg"></span></div>
+    </main>
+    <script src="function.js"></script>
 </body>
 
 </html>
